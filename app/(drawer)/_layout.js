@@ -1,5 +1,6 @@
 import React from "react";
 import { createDrawerNavigator } from "@react-navigation/drawer";
+import { DrawerActions, useNavigation } from "@react-navigation/native";
 import { withLayoutContext } from "expo-router";
 
 import { icons, images, COLORS, FONT } from "../../constants";
@@ -13,20 +14,20 @@ export const unstable_settings = {
 };
 
 const DrawerLayout = () => {
-  // const navigation = useNavigation();
+  const navigation = useNavigation();
   return (
     <Drawer>
       <Drawer.Screen
         name="(home)"
         options={{
           title: "Home",
-          // headerLeft: () => (
-          //   <ScreenHeaderBtn
-          //     dimension={30}
-          //     iconUrl={icons.menu}
-          //     onPress={() => navigation.goBack()}
-          //   />
-          // ),
+          headerLeft: () => (
+            <ScreenHeaderBtn
+              dimension={30}
+              iconUrl={icons.menu}
+              onPress={() => navigation.dispatch(DrawerActions.openDrawer())}
+            />
+          ),
           headerRight: () => (
             <ScreenHeaderBtn iconUrl={images.profile} dimension={35} />
           ),
