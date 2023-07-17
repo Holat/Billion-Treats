@@ -1,38 +1,47 @@
-import { View, Text } from "react-native";
 import React from "react";
-import { createDrawerNavigator, DrawerActions } from "@react-navigation/drawer";
-import { withNavigation } from "react-navigation";
+import { createDrawerNavigator } from "@react-navigation/drawer";
+import { withLayoutContext } from "expo-router";
 
-import Home from "./(home)";
-import Profile from "./Profile";
-import Settings from "./Settings";
-import { icons } from "../../constants";
+import { icons, images, COLORS, FONT } from "../../constants";
 import { ScreenHeaderBtn } from "../../components";
-import { useNavigation, withLayoutContext } from "expo-router";
 
 const DrawerNavigator = createDrawerNavigator().Navigator;
 const Drawer = withLayoutContext(DrawerNavigator);
 
+export const unstable_settings = {
+  initialRouteName: "(home)",
+};
+
 const DrawerLayout = () => {
-  const navigation = useNavigation();
+  // const navigation = useNavigation();
   return (
-    <Drawer.Navigator initialRouteName="">
+    <Drawer>
       <Drawer.Screen
-        name="Home"
-        component={Home}
+        name="(home)"
         options={{
-          headerLeft: () => (
-            <ScreenHeaderBtn
-              dimension={30}
-              iconUrl={icons.menu}
-              onPress={() => navigation.openDrawer()}
-            />
+          title: "Home",
+          // headerLeft: () => (
+          //   <ScreenHeaderBtn
+          //     dimension={30}
+          //     iconUrl={icons.menu}
+          //     onPress={() => navigation.goBack()}
+          //   />
+          // ),
+          headerRight: () => (
+            <ScreenHeaderBtn iconUrl={images.profile} dimension={35} />
           ),
+          headerTitle: "Billion Treat",
+          headerTitleAlign: "center",
+          headerTitleStyle: {
+            fontFamily: FONT.sil,
+            fontSize: 25,
+            color: COLORS.lightOrange,
+          },
         }}
       />
-      <Drawer.Screen name="Profile" component={Profile} />
-      <Drawer.Screen name="Setting" component={Settings} />
-    </Drawer.Navigator>
+      <Drawer.Screen name="Profile" />
+      <Drawer.Screen name="Settings" />
+    </Drawer>
   );
 };
 

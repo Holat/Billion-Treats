@@ -4,7 +4,7 @@ import { AntDesign } from "@expo/vector-icons";
 import { ScreenHeaderBtn } from "../../../components";
 import { icons, images, COLORS, FONT } from "../../../constants";
 
-const Layout = () => {
+export default function Layout() {
   return (
     <Tabs
       screenOptions={{
@@ -21,13 +21,13 @@ const Layout = () => {
           ),
           headerStyle: { backgroundColor: "white" },
           headerShadowVisible: false,
-          headerLeft: () => (
-            <ScreenHeaderBtn
-              dimension={30}
-              iconUrl={icons.menu}
-              //   onPress={() => router.back()}
-            />
-          ),
+          // headerLeft: () => (
+          //   <ScreenHeaderBtn
+          //     dimension={30}
+          //     iconUrl={icons.menu}
+          //     //   onPress={() => router.back()}
+          //   />
+          // ),
           headerRight: () => (
             <ScreenHeaderBtn iconUrl={images.profile} dimension={35} />
           ),
@@ -65,6 +65,4 @@ const Layout = () => {
       />
     </Tabs>
   );
-};
-
-export default Layout;
+}
