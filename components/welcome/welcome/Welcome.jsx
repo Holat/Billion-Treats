@@ -1,5 +1,6 @@
 import { LinearGradient } from "expo-linear-gradient";
-import { Stack, useRouter } from "expo-router";
+import { Link, Stack, useRouter } from "expo-router";
+import { useNavigation } from "expo-router";
 import {
   Button,
   Image,
@@ -15,10 +16,9 @@ import {
 import React from "react";
 
 import styles from "./welcome.style";
-import Home from "../Home/Home";
 
 const Welcome = () => {
-  const router = useRouter();
+  const navigation = useNavigation();
   return (
     <View style={styles.container}>
       <Stack.Screen
@@ -50,11 +50,11 @@ const Welcome = () => {
         </View>
         <TouchableOpacity
           style={styles.btn}
-          onPress={() => router.push(`/components/`)}
+          onPress={() => navigation.navigate("(drawer)")}
         >
           <Image
             source={require("../../../assets/icons/chevron-right.png")}
-            resizeMode="contain"
+            resizeMode="cover"
             style={{ width: 36, height: 36 }}
           />
         </TouchableOpacity>

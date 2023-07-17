@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 
-import { FONT } from "../../../constants";
+import { FONT, COLORS } from "../../../constants";
 
 const styles = StyleSheet.create({
   container: {
@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
     paddingLeft: 30,
   },
   logoT2: {
-    color: "#FF8700",
+    color: COLORS.lightOrange,
     fontFamily: FONT.mregular,
     fontSize: 20,
     fontWeight: 300,
@@ -57,11 +57,14 @@ const styles = StyleSheet.create({
     paddingLeft: 30,
   },
   btn: {
-    backgroundColor: "#FF8700",
+    backgroundColor: COLORS.lightOrange,
     padding: 18,
     borderRadius: 50,
     position: "absolute",
     bottom: 40,
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
   },
   btnText: {
     color: "black",

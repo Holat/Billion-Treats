@@ -1,7 +1,7 @@
-import { Stack } from "expo-router";
+import "react-native-gesture-handler";
 import React from "react";
 
-import { Welcome } from "../components/welcome";
+import { Welcome } from "../components";
 
 const IndexScreen = () => {
   return <Welcome />;
