@@ -32,7 +32,6 @@ const styles = StyleSheet.create({
     width: 137,
     height: 196,
     borderRadius: 12,
-    marginBottom: 10,
   },
   add: {
     width: 20,
@@ -64,7 +63,7 @@ const styles = StyleSheet.create({
   dCont: {
     padding: 13,
     position: "absolute",
-    bottom: "10%",
+    bottom: 10,
   },
   name: {
     color: "white",
@@ -94,6 +93,10 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     columnGap: 5,
     marginTop: 8,
+  },
+  rate: {
+    // marginVertical: 5,
+    flexDirection: "row",
   },
 });
 

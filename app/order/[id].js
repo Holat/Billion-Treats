@@ -41,7 +41,14 @@ const Order = () => {
       />
       <View style={styles.sheet}>
         <Text style={styles.name}>{item.name}</Text>
-        <Rating rate={item.priceRating} />
+        <Rating
+          rate={item.priceRating}
+          size={24}
+          icon1={"star"}
+          icon2={"staro"}
+          style={styles.rate}
+          color={COLORS.lightOrange}
+        />
         <Text style={styles.price}>
           <Text style={styles.priceC}>$</Text>
           {item.price}
@@ -134,7 +141,7 @@ const styles = StyleSheet.create({
   counterCont: {
     flexDirection: "row",
     alignItems: "center",
-    gap: 10,
+    gap: 15,
     marginBottom: 20,
   },
 

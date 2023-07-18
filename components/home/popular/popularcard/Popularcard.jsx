@@ -3,7 +3,9 @@ import { LinearGradient } from "expo-linear-gradient";
 import React from "react";
 import { Link } from "expo-router";
 
+import Rating from "../../../ratingStar";
 import styles from "./popularcard.style";
+import { COLORS } from "../../../../constants";
 
 const Popularcard = ({ item }) => {
   return (
@@ -24,6 +26,14 @@ const Popularcard = ({ item }) => {
         ></LinearGradient> */}
         <View style={styles.dCont}>
           <Text style={styles.name}>{item.name}</Text>
+          <Rating
+            rate={item.priceRating}
+            size={12}
+            icon1={"star"}
+            icon2={"star"}
+            style={styles.rate}
+            color={COLORS.gray}
+          />
           <View style={styles.pCont}>
             <Text style={styles.dollar}>$</Text>
             <Text style={styles.price}>{item.price}</Text>

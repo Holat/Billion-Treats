@@ -40,5 +40,38 @@
       "imageURL": "https://thumbs.dreamstime.com/b/greek-salad-black-background-photo-food-black-background-traditional-food-greek-salad-black-background-165760138.jpg",
       "desc": "A dish made with mixed vegetables, greens, and other ingredients, often served as a side or main course."
     }
+  ],
+
+  "restaurants": [
+    {
+      "name": "Restaurant A",
+      "distance": 2.5,
+      "rating": 4,
+      "imageURL": "https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2185&q=80"
+    },
+    {
+      "name": "Restaurant B",
+      "distance": 1.8,
+      "rating": 3,
+      "imageURL": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+    },
+    {
+      "name": "Restaurant C",
+      "distance": 3.2,
+      "rating": 4,
+      "imageURL": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+    },
+    {
+      "name": "Restaurant D",
+      "distance": 2.1,
+      "rating": 1,
+      "imageURL": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+    },
+    {
+      "name": "Restaurant E",
+      "distance": 4.5,
+      "rating": 2,
+      "imageURL": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+    }
   ]
 }
