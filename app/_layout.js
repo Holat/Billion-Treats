@@ -30,6 +30,7 @@ const Layout = () => {
     <Stack onLayout={onLayoutRootView}>
       <Stack.Screen name="(drawer)" options={{ headerShown: false }} />
       <Stack.Screen name="index" options={{ headerShown: false }} />
+      <Stack.Screen name="order/[id]" options={{ headerShown: false }} />
     </Stack>
   );
 };

@@ -13,6 +13,7 @@ const FONT = {
 const COLORS = {
   lightOrange: "#FF8700",
   lightGray: "#EDEDED",
+  grey: "#B1B1B1",
   white: "#FFFFFF",
   darkGray: "#999999",
 };

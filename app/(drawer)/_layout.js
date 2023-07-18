@@ -16,18 +16,23 @@ export const unstable_settings = {
 const DrawerLayout = () => {
   const navigation = useNavigation();
   return (
-    <Drawer>
+    <Drawer
+      screenOptions={{
+        drawerActiveTintColor: COLORS.lightOrange,
+        headerLeft: () => (
+          <ScreenHeaderBtn
+            dimension={30}
+            iconUrl={icons.menu}
+            onPress={() => navigation.dispatch(DrawerActions.openDrawer())}
+          />
+        ),
+        headerShadowVisible: false,
+      }}
+    >
       <Drawer.Screen
         name="(home)"
         options={{
           title: "Home",
-          headerLeft: () => (
-            <ScreenHeaderBtn
-              dimension={30}
-              iconUrl={icons.menu}
-              onPress={() => navigation.dispatch(DrawerActions.openDrawer())}
-            />
-          ),
           headerRight: () => (
             <ScreenHeaderBtn iconUrl={images.profile} dimension={35} />
           ),

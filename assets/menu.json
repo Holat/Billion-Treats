@@ -4,36 +4,41 @@
       "id": 1,
       "name": "Hamburger",
       "price": 12.99,
-      "priceRating": 2,
-      "imageURL": "https://images.squarespace-cdn.com/content/v1/5d111c9b63f9310001829f72/1603795826938-66CZIUTGUT1TT6LGAOJU/how-perception-influences-food-aesthetics-and-healthiness.jpeg?format=1500w"
+      "priceRating": 5,
+      "imageURL": "https://images.squarespace-cdn.com/content/v1/5d111c9b63f9310001829f72/1603795826938-66CZIUTGUT1TT6LGAOJU/how-perception-influences-food-aesthetics-and-healthiness.jpeg?format=1500w",
+      "desc": "A classic fast food sandwich with a ground beef patty served between buns."
     },
     {
       "id": 2,
       "name": "Pizza",
       "price": 7.15,
       "priceRating": 3,
-      "imageURL": "https://www.bora.com/fileadmin/_processed_/2/b/csm_Pizza_1edbbde8a5.jpg.webp"
+      "imageURL": "https://www.bora.com/fileadmin/_processed_/2/b/csm_Pizza_1edbbde8a5.jpg.webp",
+      "desc": "Italian dish with a dough base topped with tomato sauce, cheese, and various toppings, baked in an oven."
     },
     {
       "id": 3,
       "name": "Sushi",
       "price": 4.52,
       "priceRating": 4,
-      "imageURL": "https://freedesignfile.com/upload/2018/05/Sashimi-with-sushi-and-black-background-Stock-Photo-06.jpg"
+      "imageURL": "https://freedesignfile.com/upload/2018/05/Sashimi-with-sushi-and-black-background-Stock-Photo-06.jpg",
+      "desc": "Japanese dish made with vinegared rice and a variety of ingredients like raw seafood, vegetables, and fruits."
     },
     {
       "id": 4,
       "name": "Tacos",
       "price": 5.39,
       "priceRating": 2,
-      "imageURL": "https://this.co/wp-content/uploads/2021/07/THIS_recipe-10.jpg"
+      "imageURL": "https://this.co/wp-content/uploads/2021/07/THIS_recipe-10.jpg",
+      "desc": "Traditional Mexican dish consisting of a tortilla filled with seasoned meats, cheese, lettuce, and salsa."
     },
     {
       "id": 5,
       "name": "Salad",
       "price": 15.15,
       "priceRating": 1,
-      "imageURL": "https://thumbs.dreamstime.com/b/greek-salad-black-background-photo-food-black-background-traditional-food-greek-salad-black-background-165760138.jpg"
+      "imageURL": "https://thumbs.dreamstime.com/b/greek-salad-black-background-photo-food-black-background-traditional-food-greek-salad-black-background-165760138.jpg",
+      "desc": "A dish made with mixed vegetables, greens, and other ingredients, often served as a side or main course."
     }
   ]
 }
